@@ -1,0 +1,119 @@
+.banner-2 .contnaier {
+    background: url(https://landing-page-backend.s3.ap-south-1.amazonaws.com/blog_page_prodimages/d57fe512-84a8-47b1-ac8d-d8ac20827e6f/shutterstock_1872843844_xl.png);
+    height: 500px;
+    background-position: top left;
+    background-size: cover;
+    position: relative;
+}
+
+.banner-2 .contnaier .content {
+    position: absolute;
+    top: 50%;
+    left: 80px;
+    transform: translateY(-50%);
+    width: 400px;
+}
+
+.banner-2 .contnaier .content span {
+    color: blue;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.banner-2 .contnaier .content h3 {
+    color: #111;
+    font-size: 35px;
+    margin: 10px 0 25px;
+    text-transform: capitalize;
+}
+
+.banner-2 .contnaier .content p {
+    color: #606060;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .banner-2 .contnaier .content {
+        left: 40px; /* Adjust left positioning */
+        width: 350px; /* Adjust content width */
+    }
+
+    .banner-2 .contnaier .content h3 {
+        font-size: 30px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content p {
+        margin-bottom: 30px; /* Adjust bottom margin */
+    }
+}
+
+@media (max-width: 992px) {
+    .banner-2 .contnaier {
+        height: 400px; /* Adjust height for smaller screens */
+    }
+
+    .banner-2 .contnaier .content {
+        left: 20px; /* Adjust left positioning */
+        width: 300px; /* Adjust content width */
+    }
+
+    .banner-2 .contnaier .content span {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content h3 {
+        font-size: 28px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content p {
+        margin-bottom: 25px; /* Adjust bottom margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-2 .contnaier {
+        height: 300px; /* Adjust height for smaller screens */
+        background-position: center; /* Center the background image */
+    }
+
+    .banner-2 .contnaier .content {
+        left: 10px; /* Adjust left positioning */
+        width: 280px; /* Adjust content width */
+        text-align: center; /* Center align text */
+    }
+
+    .banner-2 .contnaier .content span {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content h3 {
+        font-size: 24px; /* Adjust font size */
+        margin: 5px 0 15px; /* Adjust margins */
+    }
+
+    .banner-2 .contnaier .content p {
+        margin-bottom: 15px; /* Adjust bottom margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-2 .contnaier .content {
+        width: 90%; /* Full width for very small screens */
+        left: 5%; /* Center content */
+    }
+
+    .banner-2 .contnaier .content span {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content h3 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .banner-2 .contnaier .content p {
+        font-size: 14px; /* Adjust font size */
+        margin-bottom: 10px; /* Adjust bottom margin */
+    }
+}

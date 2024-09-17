@@ -1,0 +1,169 @@
+/* Existing styles */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #dacccc;
+    border-bottom: 1px solid #94949450;
+    box-shadow: 0px 0px 8px #44444441;
+    z-index: 100;
+}
+
+header nav {
+    width: 95%;
+    margin: auto;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+header nav .logo {
+    color: #111;
+    font-size: 38px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: 1px 2px 3px black;
+    text-decoration: none;
+}
+
+header nav .logo span {
+    color: rgb(2, 83, 223);
+}
+
+header nav .nav-links a {
+    color: #111;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    font-size: 18px;
+    margin: 0 30px;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+}
+
+header nav .nav-links a:hover,
+header nav .nav-links a.active {
+    color: blue;
+}
+
+header nav .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right-nav a {
+    color: #111;
+    font-size: 20px;
+    margin-left: 20px;
+    position: relative; /* Positioning for count badge */
+}
+
+header nav .right-nav a:hover {
+    color: blue;
+}
+
+/* Header.css */
+.cart-icon {
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+ .wishlist-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Mobile menu styles */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+        position: relative; /* Ensure proper positioning of menu icon */
+    }
+
+    header nav .logo {
+        font-size: 30px;
+        margin-bottom: 10px; /* Space between logo and menu */
+    }
+
+    header nav .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: absolute; /* Positioning to overlap content */
+        top: 100%; /* Position below the header */
+        left: 0;
+        background-color: #dacccc; /* Match header background color */
+        z-index: 99; /* Ensure it's below the menu icon but above other content */
+    }
+
+    header nav .nav-links.open {
+        max-height: 500px; /* Adjust as needed */
+    }
+
+    header nav .nav-links a {
+        font-size: 16px;
+        margin: 10px 0;
+    }
+
+    header nav .right-nav {
+        display: flex; /* Ensure the right-nav is visible */
+        align-items: center;
+        margin-top: 10px; /* Adjust spacing as needed */
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 30px;
+        margin-left: auto; /* Align to the right */
+    }
+}
+
+@media (max-width: 480px) {
+    header nav .logo {
+        font-size: 26px;
+    }
+
+    header nav .nav-links a {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    header nav .right-nav a {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,169 @@
+.products {
+  margin: 30px auto;
+  width: 90%;
+}
+
+.products .items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item {
+  text-align: center;
+  box-sizing: border-box;
+  border: 1px solid black;
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.item:hover {
+  transform: scale(1.1); /* Slightly enlarge item on hover */
+}
+
+.top-sec h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.top-sec h3 span {
+  color: blue;
+}
+
+.products .items .item {
+  width: 22%;
+  margin-bottom: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products .items .item img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.products .items .item .title-prod {
+  color: #111;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.products .items .item .stars {
+  margin: 10px 0;
+}
+
+.products .items .item .stars i {
+  color: gold;
+}
+
+.products .items .item .price span {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.products .items .item .price del {
+  color: #606060;
+  font-size: 20px;
+  text-decoration: line-through;
+}
+
+.products .items .item .icon-product {
+  position: absolute;
+  top: 58%;
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.products .items .item .icon-product a {
+  color: blue; /* Default color */
+  font-size: 24px; /* Adjust size as needed */
+}
+
+.products .items .item .icon-product a:hover {
+  color: black;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(66, 66, 97);
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: blue;
+  color: black;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 1024px) {
+  .products .items .item {
+    width: 20%; /* Adjust item width for tablet view */
+    margin-bottom: 40px; /* Reduce bottom margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .products .items .item {
+    width: 45%; /* Adjust item width for smaller screens */
+    margin-bottom: 30px; /* Further reduce bottom margin */
+  }
+
+  .top-sec h3 {
+    font-size: 24px; /* Reduce font size for headings */
+  }
+
+  .products .items .item .title-prod {
+    font-size: 18px; /* Reduce font size for product titles */
+  }
+
+  .products .items .item .price span,
+  .products .items .item .price del {
+    font-size: 18px; /* Reduce font size for prices */
+  }
+
+  .products .items .item .icon-product a {
+    font-size: 20px; /* Adjust icon size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .products .items .item {
+    width: 80%; /* Make items full-width on very small screens */
+    margin: 20px; /* Further reduce bottom margin */
+    
+  }
+
+  .top-sec h3 {
+    font-size: 20px; /* Further reduce font size for headings */
+  }
+
+  .products .items .item .title-prod {
+    font-size: 16px; /* Further reduce font size for product titles */
+  }
+
+  .products .items .item .price span,
+  .products .items .item .price del {
+    font-size: 16px; /* Further reduce font size for prices */
+  }
+
+  .products .items .item .icon-product a {
+    font-size: 18px; /* Further reduce icon size for smaller screens */
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 14px; /* Adjust font size for buttons */
+  }
+}

@@ -1,0 +1,117 @@
+/* Base styles */
+.banner {
+    margin: 70px auto;
+    width: 90%;
+}
+
+.banner .boxs {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Add some gap between the columns */
+}
+
+.banner .box {
+    flex: 1; /* Ensures all boxes take up an equal amount of space */
+    position: relative;
+    overflow: hidden;
+}
+
+.banner .box img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner .box .text {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    text-align: right;
+    transition: bottom 0.3s ease; /* Smooth transition for bottom positioning */
+}
+
+.banner .box:hover .text {
+    bottom: 40px;
+}
+
+.banner .box .text span {
+    color: blue;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner .box .text h5 {
+    color: #111;
+    font-size: 22px;
+    margin: 8px 0 30px;
+}
+
+.banner .box .text button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0; /* Start hidden */
+}
+
+.banner .box:hover .text button {
+    opacity: 1; /* Show button on hover */
+}
+
+.banner .box .text button:hover {
+    background-color: #909aa8;
+    color: black;
+    transform: scale(1.05); /* Adds a slight zoom effect on hover */
+}
+
+.banner .box .text button:active {
+    transform: scale(0.95); /* Adds a slight shrinking effect on click */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .banner .boxs {
+        gap: 15px; /* Reduce gap between columns on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .banner {
+        width: 75%;
+    }
+
+    .banner .boxs {
+        flex-direction: column;
+    }
+
+    .banner .box {
+        margin-bottom: 20px; /* Add some space between stacked boxes */
+    }
+
+    .banner .box .text {
+        bottom: 20px; /* Adjust bottom positioning for smaller screens */
+        right: 10px; /* Adjust right positioning for smaller screens */
+        text-align: left; /* Align text to the left on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .banner .box .text span {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .banner .box .text h5 {
+        font-size: 20px; /* Adjust font size for smaller screens */
+        margin: 5px 0 20px; /* Adjust margins for smaller screens */
+    }
+
+    .banner .box .text button {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}

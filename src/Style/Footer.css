@@ -1,0 +1,149 @@
+/* Overall footer container */
+footer {
+  background-color: #f8f8f8; /* Adjust as needed */
+  padding: 50px 0;
+}
+
+footer .contnaier {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  padding: 0 20px;
+}
+
+footer .big-rows {
+  width: 30%;
+  padding-right: 20px;
+  position: relative;
+  bottom: 50px;
+}
+
+footer .big-rows .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #111;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+footer .big-rows .logo span {
+  color: blue;
+}
+
+footer .big-rows p {
+  color: #606060;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer .big-rows .social-icon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-left: 85px;
+}
+
+footer .big-rows .social-icon a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: blue;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  text-decoration: none;
+}
+
+footer .big-rows .social-icon a:hover {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+}
+
+/* Styling for footer rows */
+footer .row {
+  width: 22%;
+  margin-bottom: 30px; /* Space between rows */
+}
+
+footer .row .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+footer .row .links a {
+  display: block;
+  color: #606060;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+footer .row .links a:hover {
+  color: blue;
+}
+
+/* Bottom footer styling */
+.bottom-footer {
+  background-color: #333; /* Adjust as needed */
+  color: #fff;
+  padding: 20px 0;
+}
+
+.bottom-footer .content {
+  text-align: center;
+}
+
+.bottom-footer .content p {
+  margin: 0;
+}
+
+.bottom-footer .content span {
+  color: blue;
+}
+
+/* Media Queries for Mobile View */
+@media (max-width: 768px) {
+  footer .big-rows {
+      width: 45%; /* Adjust width to fit smaller screens */
+      padding-right: 0; /* Remove extra padding */
+      bottom: 0; /* Remove bottom position */
+  }
+
+  footer .row {
+      width: 45%; /* Adjust width for smaller screens */
+      margin-bottom: 20px; /* Adjust margin */
+  }
+
+  footer .big-rows .social-icon {
+      padding-left: 0; /* Remove extra padding */
+      justify-content: center; /* Center align social icons */
+  }
+}
+
+@media (max-width: 480px) {
+  footer .big-rows {
+      width: 100%; /* Full width on very small screens */
+      padding: 0 20px; /* Add padding for spacing */
+      margin-bottom: 30px; /* Space between sections */
+      bottom: 0; /* Remove bottom position */
+  }
+
+  footer .row {
+      width: 100%; /* Full width on very small screens */
+      margin-bottom: 20px; /* Adjust margin */
+  }
+
+  footer .row .title {
+      font-size: 16px; /* Adjust font size */
+      margin-bottom: 10px; /* Adjust margin */
+  }
+
+  footer .row .links a {
+      font-size: 14px; /* Adjust font size */
+  }
+}
