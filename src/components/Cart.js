@@ -33,7 +33,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
   };
 
   return (
-    <div className="cart">
+    <div className="cart" id='cart'>
       <h3>Your Cart</h3>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>

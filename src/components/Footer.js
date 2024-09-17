@@ -19,30 +19,30 @@ const Footer = () => {
                 <div className="row">
                     <h2 className="title">Information</h2>
                     <div className="links">
-                        <a href="#">Our Stores</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Business</a>
-                        <a href="#">Delivery</a>
+                        <a href="#banner">Our Stores</a>
+                        <a href="#contact">About Us</a>
+                        <a href="#contact">Business</a>
+                        <a href="#cart">Delivery</a>
                     </div>
                 </div>
 
                 <div className="row">
                     <h2 className="title">Useful Links</h2>
                     <div className="links">
-                        <a href="#">Our Stores</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Business</a>
-                        <a href="#">Delivery</a>
+                    <a href="#banner">Our Stores</a>
+                        <a href="#contact">About Us</a>
+                        <a href="#contact">Business</a>
+                        <a href="#cart">Delivery</a>
                     </div>
                 </div>
 
                 <div className="row">
                     <h2 className="title">Service</h2>
                     <div className="links">
-                        <a href="#">Our Stores</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Business</a>
-                        <a href="#">Delivery</a>
+                    <a href="#banner">Our Stores</a>
+                        <a href="#contact">About Us</a>
+                        <a href="#contact">Business</a>
+                        <a href="#cart">Delivery</a>
                     </div>
                 </div>
             </div>

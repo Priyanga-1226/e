@@ -60,9 +60,7 @@ const Product = ({ searchTerm = '', addToCart, addToWishlist }) => {
                   ADD to CART
                 </button>
                 <div className="icon-product">
-                  <a href="#" onClick={() => addToWishlist(product)}>
-                    <FontAwesomeIcon icon={faHeart} />
-                  </a>
+                <button  onClick={() => addToWishlist(product)}><FontAwesomeIcon icon={faHeart} /></button>
                 </div>
               </div>
             </div>
