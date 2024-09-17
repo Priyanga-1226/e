@@ -21,26 +21,26 @@ const Header = ({ cartItems, toggleCart, wishlistItems, toggleWishlist }) => {
   return (
     <header>
       <nav>
-        <a href="#" className="logo">Fashion<span>Track</span></a>
+        <a href="#home" className="logo">Fashion<span>Track</span></a>
         <div className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
-          <a href="#" className="active">home</a>
-          <a href="#banner">shop</a>
-          <a href="#women">women's</a>
-          <a href="#men">men's</a>
-          <a href="#kid">kid's</a>
-          <a href="#contact">contact</a>
+          <a href="#home" className="active">Home</a>
+          <a href="#banner">Shop</a>
+          <a href="#women">Women's</a>
+          <a href="#men">Men's</a>
+          <a href="#kid">Kid's</a>
+          <a href="#contact">Contact</a>
         </div>
 
         <div className="right-nav">
-          <a href="#" onClick={handleWishlistClick}>
+          <button onClick={handleWishlistClick} className="wishlist-icon">
             <FontAwesomeIcon icon={faHeartRegular} />
             {wishlistItems.length > 0 && <span className="wishlist-count">{wishlistItems.length}</span>}
-          </a>
+          </button>
 
-          <a href="#" className="cart-icon" onClick={handleCartClick}>
+          <button onClick={handleCartClick} className="cart-icon">
             <FontAwesomeIcon icon={faCartShopping} />
             {cartItems.length > 0 && <span className="cart-count">{cartItems.length}</span>}
-          </a>
+          </button>
         </div>
 
         <div className="menu-icon" onClick={toggleMenu}>

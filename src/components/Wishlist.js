@@ -3,7 +3,7 @@ import '../Style/Wishlist.css';
 
 const Wishlist = ({ wishlistItems, removeFromWishlist, addCart }) => {
   return (
-    <div className="wishlist">
+    <div className="wishlist" id='wish'>
       <h2>Wishlist</h2>
       {wishlistItems.length === 0 ? (
         <p>No items in the wishlist.</p>

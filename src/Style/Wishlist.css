@@ -1,3 +1,6 @@
+/* Wishlist.css */
+
+/* Existing styles */
 .wishlist {
     position: fixed;
     right: 400px;
@@ -63,10 +66,15 @@
     background-color: rgb(56, 56, 92); /* Match cart button color */
     color: white;
     border: none;
-    padding: 8px 16px;
+    padding: 5px 16px;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-right: 10px; /* Add space between buttons */
+}
+
+.wishlist button:last-child {
+    margin-right: 0; /* Remove right margin from the last button */
 }
 
 .wishlist button:hover {
@@ -100,10 +108,9 @@
     }
 }
 
-/* Responsive Design for Mobile Devices */
 @media (max-width: 480px) {
     .wishlist {
-        width: 80%; /* Full-width cart for mobile */
+        width: 80%; /* Full-width wishlist for mobile */
         top: 160px; /* Adjust the top position */
         right: 20px; /* Ensure it aligns to the right edge */
         max-height: 350px; /* Adjust max height for mobile */

@@ -103,6 +103,20 @@
   background-color: #0056b3;
 }
 
+.cart-icon {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit; /* Ensures the text color remains the same */
+  font-size: 1em; /* Adjust size as needed */
+}
+
+
+.cart-icon:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .cart {
