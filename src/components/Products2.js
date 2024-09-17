@@ -13,6 +13,7 @@ const products = [
   },
   {
     imgSrc: 'https://img.freepik.com/premium-photo/mens-fashion_1246590-7306.jpg?size=626&ext=jpg&ga=GA1.1.1657819223.1709699406&semt=ais_hybrid',
+    title: 'Jacket',
     rating: 4.5,
     price: 850,
     oldPrice: 1000
@@ -49,7 +50,8 @@ const Product = ({ searchTerm = '', addToCart, addToWishlist }) => {
             <div className="item" key={index}>
               <img src={product.imgSrc} alt={product.title || 'Product Image'} />
               <div className="product-desc">
-                <a href="#" className="title-prod">{product.title || 'No Title'}</a>
+                <h1  className="title-prod">{product.title || 'No Title'}</h1>
+                
                 <div className="price">
                   <span>&#8377; {product.price}</span>
                   <del>&#8377; {product.oldPrice}</del>

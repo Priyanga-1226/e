@@ -53,7 +53,7 @@ const Product = ({ searchTerm = '', addToCart ,addToWishlist }) => {
             <div className="item" key={index}>
               <img src={product.imgSrc} alt={product.title} />
               <div className="product-desc">
-                <a href="#" className="title-prod">{product.title}</a>
+              <h1  className="title-prod">{product.title || 'No Title'}</h1>
                 <div className="price">
                   <span>&#8377; {product.price}</span>
                   <del>&#8377; {product.oldPrice}</del>
